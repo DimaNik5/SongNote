@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SongNote:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aafa09cd-013b-42c4-9848-1af19c8434c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SongNote.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/connection/connection.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/connection/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/connection/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection/src/TCPConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/connection/src/TCPConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/connection/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/connection/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/connection/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/connection/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/connection/TCPConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/connection/TCPConnection.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

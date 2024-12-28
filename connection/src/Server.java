@@ -1,5 +1,7 @@
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +16,14 @@ class Server implements TCPConnectionListener{
     Server(){
         connection = new ArrayList<>();
         System.out.println("Server running...");
+        try {
+            InetAddress me = InetAddress.getLocalHost();
+            String dottedQuad = me.getHostAddress();
+            System.out.println("My address is " + dottedQuad);
+        } catch (UnknownHostException e) {
+            System.out.println("I'm sorry. I don't know my own address.");
+        }
+
         try(ServerSocket serverSocket = new ServerSocket(8080)){
             while (true){
                 try{
@@ -51,6 +61,9 @@ class Server implements TCPConnectionListener{
 
     private void sendToAllConnection(String value){
         System.out.println(value);
-        connection.forEach(e -> e.sendString(value));
+        //connection.forEach(e -> e.sendString(value));
+        for (TCPConnection tcpConnection : connection) {
+            tcpConnection.sendString(value);
+        }
     }
 }

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Client implements TCPConnectionListener{
 
-    private static final String IP_ADDRESS = "127.0.0.1";
+    private static final String IP_ADDRESS = "192.168.0.104";
     private static final int PORT = 8080;
 
     private final TCPConnection connection;
@@ -21,11 +21,10 @@ public class Client implements TCPConnectionListener{
 
         Scanner scanner = new Scanner(System.in);
         String l;
-        while (true){
-            l = scanner.nextLine() + "\r\n";
+        while (true) {
+            l = scanner.nextLine();
             connection.sendString(l);
         }
-
     }
 
     @Override
